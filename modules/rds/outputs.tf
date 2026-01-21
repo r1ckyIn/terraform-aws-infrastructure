@@ -30,7 +30,7 @@ output "db_endpoint" {
     The connection endpoint in address:port format.
     Use this in your application configuration.
   EOT
-  value = aws_db_instance.main.endpoint
+  value       = aws_db_instance.main.endpoint
 }
 
 output "db_address" {

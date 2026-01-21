@@ -23,7 +23,7 @@ module "vpc" {
   name               = local.name_prefix
   cidr_block         = var.vpc_cidr
   availability_zones = var.availability_zones
-  single_nat_gateway = var.single_nat_gateway  # false for HA
+  single_nat_gateway = var.single_nat_gateway # false for HA
 
   tags = local.common_tags
 }
@@ -122,21 +122,21 @@ module "rds" {
   instance_class = var.db_instance_class
 
   allocated_storage     = var.db_allocated_storage
-  max_allocated_storage = 500  # Auto-scaling up to 500GB
+  max_allocated_storage = 500 # Auto-scaling up to 500GB
   db_name               = var.db_name
   username              = var.db_username
   password              = var.db_password
   port                  = var.db_port
 
   # Production settings
-  multi_az              = var.db_multi_az
-  deletion_protection   = var.db_deletion_protection
-  skip_final_snapshot   = var.db_skip_final_snapshot
+  multi_az                = var.db_multi_az
+  deletion_protection     = var.db_deletion_protection
+  skip_final_snapshot     = var.db_skip_final_snapshot
   backup_retention_period = 30
 
   # Enable monitoring
   performance_insights_enabled          = true
-  performance_insights_retention_period = 731  # 2 years
+  performance_insights_retention_period = 731 # 2 years
   enabled_cloudwatch_logs_exports       = ["error", "slowquery"]
 
   tags = local.common_tags

@@ -20,7 +20,7 @@ output "alb_dns_name" {
       - Configure CloudFront origin
       - Test the application endpoint
   EOT
-  value = aws_lb.main.dns_name
+  value       = aws_lb.main.dns_name
 }
 
 output "alb_zone_id" {
