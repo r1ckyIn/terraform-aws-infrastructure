@@ -8,7 +8,7 @@ crash.*.log
 
 # Terraform directory
 .terraform/
-.terraform.lock.hcl
+# NOTE: .terraform.lock.hcl should be committed for provider version consistency
 
 # Terraform plan files
 *.tfplan
