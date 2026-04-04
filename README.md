@@ -1,6 +1,6 @@
-# Terraform AWS Multi-Tier Infrastructure
-
 <div align="center">
+
+# Terraform AWS Multi-Tier Infrastructure
 
 [![Terraform](https://img.shields.io/badge/Terraform-1.5+-844FBA?style=flat-square&logo=terraform&logoColor=white)](https://www.terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
